@@ -1,0 +1,274 @@
+@import url(utilities.css);
+:root{
+    --primary:#A0DEFF;
+    --dark:#5AB2FF;
+    --pure:#ffffff;
+    --ternary:#CAF4FF;
+    --light:#FFF9D0;
+    --logo:#005478;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background: var(--light);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing:antialiased;
+}
+header{
+    background: var(--dark);
+    height: 4.3rem;
+}
+header nav{
+    padding: 0.4rem;
+}
+.container{
+    padding: 0 15px;
+    margin: auto;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+.hero .left img{
+    margin-top: 4rem;
+    border: 5px solid ;
+    border-radius: 50%;
+    border-color: var(--logo);
+    margin-right: 6rem;
+}
+
+.hero{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    color: var(--logo);
+    font-family: "Dancing Script", cursive;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 550;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--logo);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.middle{
+    background-color: var(--primary);
+    height: 50rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.about{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.about .right img{
+    height: 500px;
+    border: 5px solid;
+    border-radius: 50%;
+    border-color: var(--dark);
+    margin-left: 40%;
+}
+
+.about .left h1{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.about .left h1 span{
+    color: var(--primary);
+}
+
+.about .left h3{
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.about .left h3 span{
+    color: var(--dark);
+}
+
+.about .left a img{
+    height: 40px;
+    margin-top: 1rem;
+    padding: 0.3rem;
+}
+
+.skills{
+    background: var(--primary);
+    clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 70% 90%, 0 100%);
+    height: 40rem;
+}
+
+.skills-heading{
+    color: var(--logo);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    padding-top: 6rem;
+    margin-top: 3rem;
+}
+.skills-heading span{
+    color: var(--dark);
+}
+.skills-heading + p{
+    color: var(--logo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.slider {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 94px;
+}
+.slide {
+    text-align: center;
+    padding: 20px;
+}
+.slide img {
+    margin-bottom: 20px;
+}
+
+.services .container{
+    height: 22rem;
+}
+
+.services .container h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    font-size: 1.5;
+}
+.services .container h1 span{
+    color: var(--primary);
+}
+.services .container p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--pure);
+    margin-bottom: 1.5rem;
+}
+.services .container .card-wapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-column-gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+.services .container h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--pure);
+    margin-bottom: 2rem;
+    font-size: 1.5;
+}
+
+.services .container .card-wapper .card{
+    background: var(--logo);
+    border-width: 10px;
+    border-radius: 10px;
+}
+.services .container .card-wapper .card img{
+    left: 7.5rem;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+}
+
+.experiences{
+    background: var(--primary);
+    clip-path: polygon(0 0, 30% 15%, 100% 0, 100% 100%, 70% 90%, 0 100%);
+    align-items: center;
+    height: 30rem;
+}
+
+.experiences .container h1{
+    color: var(--logo);
+    text-align: center;
+    padding-top: 75px;
+}
+
+.experiences .container h1 span{
+    color: var(--dark);
+}
+
+.experiences .container h6{
+    text-align: center;
+    color: var(--logo);
+}
+
+.experiences .container img{
+    padding: 2rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.experiences .container .img{
+    display: flex;
+}
+.contact .container h1{
+    color: var(--logo);
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 25px;
+}
+.contact .container h1 span{
+    color: var(--dark);
+}
+.contact .container .card-wapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-column-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.contact .container .card-wapper .card img{
+    left: 7.5rem;
+    margin-left: 40%;
+    margin-bottom: 2rem;
+}
+.contact .container .card-wapper .card h2, .contact .container .card-wapper .card h6{
+    margin-left: 40%;
+}
+footer{
+    background-color: var(--dark);
+    padding-top: 25px;
+    text-align: center;
+}
